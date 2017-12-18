@@ -27,7 +27,7 @@ store on stack and **stack excutable**
 ### Ret
 Payload = 20 bytes
 
-## Solusion
+## Solution
 ### Leak stack address
 If we want to execute code on stack, we should return $PC to stack at first. However, stack address is not always the same. Thus, we should leak stack address in the beginning.
 
