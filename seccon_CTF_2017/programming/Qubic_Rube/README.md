@@ -8,7 +8,7 @@ Please continue to solve Rubic's Cube and read QR code.
 
 http://qubicrube.pwn.seccon.jp:33654
 
-## Solusion
+## Solution
 
 This challenge is really a "**programming challenge**". Orz
 

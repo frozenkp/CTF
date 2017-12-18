@@ -11,7 +11,7 @@ Please answer the flag as SECCON{MOVIES_TITLE}, replace all alphabets with capit
 main(t,i,j){unsigned char p[]="###<f_YM\204g_YM\204g_Y_H #<f_YM\204g_YM\204g_Y_H #+-?[WKAMYJ/7 #+-?[WKgH #+-?[WKAMYJ/7hk\206\203tk\\YJAfkkk";for(i=0;t=1;i=(i+1)%(sizeof(p)-1)){double x=pow(1.05946309435931,p[i]/6+13);for(j=1+p[i]%6;t++%(8192/j);)putchar(t>>5|(int)(t*x));}}
 ```
 
-## Solusion
+## Solution
 
 I found a cool video "[Creating music in one line of C code](https://www.youtube.com/watch?v=L9KLnN0GczI)"on Youtube, and it looked similar to this challenge.
 
