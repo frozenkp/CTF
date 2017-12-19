@@ -179,7 +179,7 @@ After adding note 2, note 0 is like this:
 ```c
 struct note {
 	printNote(); 		// 0x0804862b
-  	puts_got; 			// 0x804a024
+  	puts_got; 		// 0x804a024
 }
 ```
 
