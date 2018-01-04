@@ -5,7 +5,9 @@
 > Category: pwn
 
 Welcome !! Challenger ~
+
 Here is a simple challenge for you.
+
 Try to find the key to pass.
 
 `nc bamboofox.cs.nctu.edu.tw 58799`
@@ -75,4 +77,3 @@ AAAAAAAABBBBBBBBCCCCCCCCDDDD
 ```python
 r.sendline(payload + p64(0x1a0a))
 ```
-
