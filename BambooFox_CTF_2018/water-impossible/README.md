@@ -43,11 +43,11 @@ int b = 2;
 宣告 a 時，stack 狀態如下
 
 ```
-+----------+    0x7fffffffe728		low
++----------+    0x7fffffffe728	low
 |  a = 1   |
 +----------+ 	0x7fffffffe730
 |   ...    |
-+----------+    0x7fffffffe738		high
++----------+    0x7fffffffe738	high
 ```
 
 宣告 b 時，stack 狀態如下
@@ -79,13 +79,13 @@ gets(buf);
 宣告後 stack 狀態如下
 
 ```
-+----------------+    	0x7fffffffe720 	low  <-----+
-|  		0x0	 	 |								   |
-+----------------+		0x7fffffffe728 			   |  buf[16]
-|  		0x0	 	 | 								   |
-+----------------+		0x7fffffffe730 		 <-----+-----+
-|   0xdeadbeef   |                                       | key
-+----------------+    	0x7fffffffe738	high <-----------+
++----------------+  0x7fffffffe720    low  <-----+
+|     0x0	 |				 |
++----------------+  0x7fffffffe728 		 |  buf[16]
+|     0x0	 | 				 |
++----------------+  0x7fffffffe730         <-----+-----+
+|   0xdeadbeef   |                                     | key
++----------------+  0x7fffffffe738    high <-----------+
 ```
 
 因為 gets 沒有限制輸入的長度，因此可以輸入超過 buf 長度，此時多的部份就會蓋到 stack 其他部份
@@ -93,13 +93,13 @@ gets(buf);
 例如輸入 `aaaaaaaabbbbbbbbcccccccc`
 
 ```
-+----------------+    	0x7fffffffe720 	low	 <-----+
-|  	aaaaaaaa	 | 								   |
-+----------------+		0x7fffffffe728             |  buf[16]
-|  	bbbbbbbb 	 |                                 |
-+----------------+		0x7fffffffe730       <-----+-----+
-|  	cccccccc   	 | 										 | key
-+----------------+    	0x7fffffffe738	high <-----------+
++----------------+  0x7fffffffe720    low  <-----+
+|   aaaaaaaa	 | 				 |
++----------------+  0x7fffffffe728               |  buf[16]
+|   bbbbbbbb 	 |                               |
++----------------+  0x7fffffffe730         <-----+-----+
+|   cccccccc   	 | 				       | key
++----------------+  0x7fffffffe738    high <-----------+
 ```
 
 原本 `key` 存的位置就被 buf 的輸入蓋掉了
