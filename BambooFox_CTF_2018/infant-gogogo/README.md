@@ -1,4 +1,4 @@
-# infant-gotoheaven
+# infant-gogogo
 
 > Challenge Link: [infant-gogogo](http://ctf.bamboofox.cs.nctu.edu.tw/challenges#infant-gogogo)
 >
