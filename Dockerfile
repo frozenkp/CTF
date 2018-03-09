@@ -7,7 +7,8 @@ MAINTAINER frozenkp
 
 WORKDIR /root
 
-RUN apt-get update & apt-get install -y git tmux gdb vim binutils python python-pip python-dev libssl-dev libffi-dev build-essential rubygems golang
+RUN apt-get update
+RUN apt-get install -y git tmux gdb vim binutils python python-pip python-dev libssl-dev libffi-dev build-essential rubygems
 
 # pwntools
 RUN pip install --upgrade pip & pip install --upgrade pwntools
@@ -22,7 +23,4 @@ RUN cp ~/Pwngdb/.gdbinit ~/
 
 # onegadget
 RUN gem install one_gadget
-
-# go
-RUN mkdir go & mkdir go/src go/pkg go/bin
 
