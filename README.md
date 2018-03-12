@@ -7,7 +7,7 @@ frozenkp's CTF Writeups & useful tools
 | Year  | CTF               | Challenge                 | Category    | Keyword                           |
 | ----- | ----------------- | ------------------------- | ----------- | --------------------------------- |
 | 2014  | NoConName qual    | inBINcible                | reverse     | Golang, xor                       |
-| 2015  | B-sides vancouver | delphi                    | Reverse     | Golang, cmd injection             |
+| 2015  | B-sides vancouver | delphi                    | reverse     | Golang, cmd injection             |
 | 2017  | HITB CTF          | 2017, Dating in Singapore | misc        |                                   |
 | 2017  | HITB CTF          | Flying High               | misc        | UBIfs                             |
 | 2017  | HITB CTF          | Pasty                     | web         | Jwt                               |
