@@ -11,19 +11,19 @@ MAINTAINER frozenkp
 
 WORKDIR /root
 
-RUN 'pkg --add-architecture i386 ; apt-get update ; apt-get install -y git tmux gdb vim binutils python python-pip python-dev libssl-dev libffi-dev build-essential rubygems netcat nmap libc6:i386 libncurses5:i386 libstdc++6:i386'
+RUN dpkg --add-architecture i386 ; apt-get update ; apt-get install -y git tmux gdb vim binutils python python-pip python-dev libssl-dev libffi-dev build-essential rubygems netcat nmap libc6:i386 libncurses5:i386 libstdc++6:i386
 
 # pwntools
-RUN 'pip install --upgrade pip ; pip install --upgrade pwntools'
+RUN pip install --upgrade pip ; pip install --upgrade pwntools
 
 # pwngdb
-RUN 'git clone https://github.com/scwuaptx/Pwngdb.git ; cp ~/Pwngdb/.gdbinit ~/'
+RUN git clone https://github.com/scwuaptx/Pwngdb.git ; cp ~/Pwngdb/.gdbinit ~/
 
 # peda
 # original
 # RUN git clone https://github.com/longld/peda.git ~/peda ; echo "source ~/peda/peda.py" >> ~/.gdbinit
 # angelboy-peda
-RUN 'git clone https://github.com/scwuaptx/peda.git ~/peda ; echo "source ~/peda/peda.py" >> ~/.gdbinit ; cp ~/peda/.inputrc ~/'
+RUN git clone https://github.com/scwuaptx/peda.git ~/peda ; echo "source ~/peda/peda.py" >> ~/.gdbinit ; cp ~/peda/.inputrc ~/
 
 # onegadget
 RUN gem install one_gadget
