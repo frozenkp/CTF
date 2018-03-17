@@ -1,6 +1,6 @@
 # This is a dockerfile for pwn environment.
-# Last update: 2018/03/12
-# version 1.0.3
+# Last update: 2018/03/17
+# version 1.0.4
 
 # Run command:
 # docker run -it {--name pwn_env} {-v /??/data:/root/data} --cap-add=SYS_PTRACE --security-opt seccomp=unconfined frozenkp/pwn /bin/bash
@@ -11,7 +11,8 @@ MAINTAINER frozenkp
 
 WORKDIR /root
 
-RUN apt-get update ; apt-get install -y git tmux gdb vim binutils python python-pip python-dev libssl-dev libffi-dev build-essential rubygems netcat nmap
+RUN pkg --add-architecture i386 ; apt-get update ; apt-get install -y git tmux gdb vim binutils python python-pip python-dev libssl-dev libffi-dev build-essential rubygems netcat nmap libc6:i386 libncurses5:i386 libstdc++6:i386
+
 # pwntools
 RUN pip install --upgrade pip ; pip install --upgrade pwntools
 
