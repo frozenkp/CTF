@@ -1,6 +1,6 @@
 # This is a dockerfile for pwn environment.
 # Last update: 2018/03/17
-# version 1.0.4
+# version 1.0.5
 
 # Run command:
 # docker run -it {--name pwn_env} {-v /??/data:/root/data} --cap-add=SYS_PTRACE --security-opt seccomp=unconfined frozenkp/pwn /bin/bash
@@ -17,7 +17,11 @@ RUN pkg --add-architecture i386 ; apt-get update ; apt-get install -y git tmux g
 RUN pip install --upgrade pip ; pip install --upgrade pwntools
 
 # peda
-RUN git clone https://github.com/longld/peda.git ~/peda ; echo "source ~/peda/peda.py" >> ~/.gdbinit
+# original
+# RUN git clone https://github.com/longld/peda.git ~/peda ; echo "source ~/peda/peda.py" >> ~/.gdbinit
+
+# angelboy-peda
+RUN git clone https://github.com/scwuaptx/peda.git ~/peda ; echo "source ~/peda/peda.py" >> ~/.gdbinit ; cp ~/peda/.inputrc ~/
 
 # pwngdb
 RUN git clone https://github.com/scwuaptx/Pwngdb.git ; cp ~/Pwngdb/.gdbinit ~/
