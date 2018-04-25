@@ -175,7 +175,7 @@ RUN git clone https://github.com/scwuaptx/peda.git ~/peda ; echo "source ~/peda/
 
 ```yaml
 critical_heap:
-	cap_add:
-		- SYS_PTRACE
+    cap_add:
+        - SYS_PTRACE
 ```
 
