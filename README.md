@@ -19,6 +19,7 @@ frozenkp's CTF Writeups & useful tools
 | Other | pwnable.tw        | Start                     | pwn         | Buffer overflow, stack executable |
 | Other | pwnable.tw        | hacknote                  | pwn         | Heap use after free               |
 | Other | pwnable.tw        | dubblesort                | pwn         | Buffer overflow                   |
+| Other | pwnable.tw        | criticalheap              | pwn         | localtime_TZ, format string       |
 
 ## Usefule Tools
 
