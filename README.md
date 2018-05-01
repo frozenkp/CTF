@@ -16,13 +16,14 @@ frozenkp's CTF Writeups & useful tools
 | 2018  | BambooFox CTF     | infant-gogogo             | pwn         | Golang, buffer overflow           |
 | 2018  | BambooFox CTF     | infant-gotoheaven         | pwn         | Golang, buffer overflow           |
 | 2018  | BambooFox CTF     | water-impossible          | pwn         | buffer overflow                   |
-| 2019  | ASIS CTF qual     | Plastic                   | misc        | base64, binwalk                   |
+| 2018  | ASIS CTF qual     | Plastic                   | misc        | base64, binwalk                   |
+| 2018  | ASIS CTF qual     | Trashy Or Classy          | forensic    | casync                            |
 | Other | pwnable.tw        | Start                     | pwn         | Buffer overflow, stack executable |
 | Other | pwnable.tw        | hacknote                  | pwn         | Heap use after free               |
 | Other | pwnable.tw        | dubblesort                | pwn         | Buffer overflow                   |
 | Other | pwnable.tw        | criticalheap              | pwn         | localtime_TZ, format string       |
 
-## Usefule Tools
+## Useful Tools
 
 ### Dockerfile
 
