@@ -1,9 +1,9 @@
 # This is a dockerfile for pwn environment.
-# Last update: 2018/04/30
-# version 1.0.7
+# Last update: 2018/05/01
+# version 1.0.8
 
 # Run command:
-# docker run -it {--name pwn_env} {-v /??/data:/root/data} --cap-add=SYS_PTRACE --security-opt seccomp=unconfined frozenkp/pwn /bin/bash
+# docker run -it {--name pwn_env} {-v /??/data:/root/data} --privileged frozenkp/pwn /bin/bash
 
 FROM ubuntu
 
@@ -28,3 +28,5 @@ RUN git clone https://github.com/scwuaptx/peda.git ~/peda ; echo "source ~/peda/
 # onegadget
 RUN gem install one_gadget
 
+# radare2
+RUN git clone https://github.com/radare/radare2.git ; radare2/sys/install.sh
