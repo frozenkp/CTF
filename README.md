@@ -29,7 +29,7 @@ Pwn environment in docker, inclusive of peda, pwngdb, one_gadget, readelf….
 
 ```bash
 $ docker pull frozenkp/pwn
-$ docker run -it {--name pwn_env} {-v /??/data:/root/data} --cap-add=SYS_PTRACE --security-opt seccomp=unconfined frozenkp/pwn /bin/bash
+$ docker run -it {--name pwn_env} {-v /??/data:/root/data} --privileged frozenkp/pwn /bin/bash
 $ docker exec -it pwn_env /bin/bash
 ```
 
