@@ -18,6 +18,7 @@ frozenkp's CTF Writeups & useful tools
 | 2018  | BambooFox CTF     | water-impossible          | pwn         | buffer overflow                   |
 | 2018  | ASIS CTF qual     | Plastic                   | misc        | base64, binwalk                   |
 | 2018  | ASIS CTF qual     | Trashy Or Classy          | forensic    | casync                            |
+| 2018  | ASIS CTF qual     | Buy flags                 | web         | Flask, json                       |
 | Other | pwnable.tw        | Start                     | pwn         | Buffer overflow, stack executable |
 | Other | pwnable.tw        | hacknote                  | pwn         | Heap use after free               |
 | Other | pwnable.tw        | dubblesort                | pwn         | Buffer overflow                   |
