@@ -21,13 +21,13 @@
 傳的內容有 coupon 以及點選的 flag 項目及數量
 
 ```json
-{card: [{name: "asis", count: 1}], coupon: "YWJj"}
+{"card": [{"name": "asis", "count": 1}], "coupon": "YWJj"}
 ```
 
 結果也是用 json 回傳
 
 ```json
-{result: "your credit not enough"}
+{"result": "your credit not enough"}
 ```
 
 這邊有嘗試把 count 改成 0 或是 -1，不過 server 都有處理掉
